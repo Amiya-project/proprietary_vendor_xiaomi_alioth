@@ -61,6 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/alioth/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/alioth/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/alioth/proprietary/vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/xiaomi/alioth/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/alioth/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/alioth/proprietary/vendor/etc/ltm_config_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml \
@@ -321,9 +322,11 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.swmf \
     camera.qcom \
     com.qti.chi.override \
+    displayfeature.default \
     fingerprint.fpc.default \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.xiaomi.hardware.citsensorservice@1.1-impl \
+    vendor.xiaomi.hardware.displayfeature@1.0-impl \
     libHalSuperSensorServer \
     libMIAIHDRhvx_interface \
     libSNPE \
@@ -366,12 +369,15 @@ PRODUCT_PACKAGES += \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
     libchilog \
+    libclient2slpi.notifier \
     libcom.qti.chinodeutils \
     libcvface_api \
     libcvp2 \
     libcvp2_hfi \
     libcvp_common \
     libcvpcpuRev_skel \
+    libdisplayfeature \
+    libdisplayfeatureservice \
     libdng_sdk2vendor \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
@@ -486,9 +492,11 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     com.android.hotwordenrollment.common.util \
     batterysecret \
+    displayfeature \
     hvdcp_opti \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor.xiaomi.hardware.citsensorservice@1.1-service \
+    vendor.xiaomi.hardware.displayfeature@1.0-service \
     init.qcom.sensors \
     init.qti.chg_policy \
     nv_mac \
