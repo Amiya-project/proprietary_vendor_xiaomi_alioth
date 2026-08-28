@@ -3626,7 +3626,7 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libqservice",
                 "libdrm",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "libhidltransport",
                 "libhidlbase",
                 "libsdm-disp-vndapis",
