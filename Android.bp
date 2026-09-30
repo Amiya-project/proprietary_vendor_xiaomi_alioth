@@ -175,6 +175,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaudioconfigstore",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libaudioconfigstore.so",
+            ],
+            shared_libs: [
+                "libexpat",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libaudioroute_ext",
     owner: "xiaomi",
     strip: {
@@ -190,37 +216,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libtinyalsa",
                 "libaudioroute-v34",
-                "libexpat",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmmhardware",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmhardware.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libtinyalsa",
-                "libtinycompress",
-                "libaudioroute",
                 "libexpat",
                 "libc++",
                 "libc",
@@ -4094,6 +4089,37 @@ cc_prebuilt_library_shared {
                 "libmulticam_video_optical_zoom",
                 "libcutils",
                 "libmpbase",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsat",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libarcsat.so",
+            ],
+            shared_libs: [
+                "libcamera_metadata",
+                "libcom.qti.chinodeutils",
+                "libtriplecam_video_optical_zoom",
+                "libcutils",
+                "libmpbase",
+                "libz",
                 "liblog",
                 "libc++",
                 "libc",

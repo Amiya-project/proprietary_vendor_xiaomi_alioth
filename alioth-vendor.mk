@@ -17,6 +17,26 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/alioth/proprietary/vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb \
     vendor/xiaomi/alioth/proprietary/vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp \
     vendor/xiaomi/alioth/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/102_SummerDay.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/102_SummerDay.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/103_Fantasy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/103_Fantasy.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/104_Meet.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/105_WindSing.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/105_WindSing.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/106_Lost.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/106_Lost.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/107_Central.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/107_Central.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/108_NorthernEurope.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/108_NorthernEurope.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/109_Rome.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/109_Rome.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/110_BlackGold.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/111_GreenOrange.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/111_GreenOrange.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/112_CyberPunk.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/112_CyberPunk.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/113_BlackIce.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/113_BlackIce.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/121_Bleach.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/121_Bleach.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/122_Thriller.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/122_Thriller.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/123_TealOrange.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/123_TealOrange.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/124_JapaneseStyle.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/124_JapaneseStyle.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/125_Latin.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/125_Latin.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/126_Fantasy2.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/126_Fantasy2.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/127_Creamy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/127_Creamy.png \
+    vendor/xiaomi/alioth/proprietary/vendor/etc/camera/128_Sepia.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/128_Sepia.png \
     vendor/xiaomi/alioth/proprietary/vendor/etc/camera/CFR_para_UW_V01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW_V01.bin \
     vendor/xiaomi/alioth/proprietary/vendor/etc/camera/CFR_para_UW_V07.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW_V07.bin \
     vendor/xiaomi/alioth/proprietary/vendor/etc/camera/CFR_para_W_V01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_W_V01.bin \
@@ -218,8 +238,8 @@ PRODUCT_PACKAGES += \
     liba2dpoffload_alioth \
     libaudio_log_utils \
     libaudiocloudctrl \
+    libaudioconfigstore \
     libaudioroute_ext \
-    libmmhardware \
     libresampler \
     vendor.qti.hardware.audiohalext@1.0 \
     libxlog \
@@ -339,6 +359,7 @@ PRODUCT_PACKAGES += \
     libalhLDC \
     libarcdualcamsat \
     libarcmulticamsat \
+    libarcsat \
     libarcsoft_beautyshot \
     libarcsoft_bodyslim \
     libarcsoft_distortion_correction \
